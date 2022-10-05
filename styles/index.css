@@ -18,9 +18,16 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.carrito {
+  z-index: 20;
+}
 .carrito .filaCarrito {
   margin-left: 10%;
   width: 80%;
   list-style: none;
   background-color: rgba(136, 119, 85, 0.2);
+}
+
+.active {
+  display: none !important;
 }/*# sourceMappingURL=index.css.map */

@@ -19,10 +19,17 @@
     }
 }
 .carrito{
+    z-index: 20;
     .filaCarrito{
         margin-left: 10%;
         width: 80%;
         list-style: none;
         background-color: #8753;
     }
+}
+.active{
+    display: none !important;
+}
+.fa-cart-shopping{
+    
 }

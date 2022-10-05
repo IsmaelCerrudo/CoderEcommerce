@@ -1,0 +1,86 @@
+[
+    {
+       "id":1,
+       "tipo":"heladera",
+       "nombre":"Heladera",
+       "precio":19999,
+       "img":"/img/heladera.png"
+    },
+    {
+       "id":2,
+       "tipo":"heladera",
+       "nombre":"Heladera 2",
+       "precio":39999,
+       "img":"/img/heladera.png"
+    },
+    {
+       "id":3,
+       "tipo":"heladera",
+       "nombre":"Heladera 3",
+       "precio":59999,
+       "img":"/img/heladera.png"
+    },
+    {
+       "id":4,
+       "tipo":"horno",
+       "nombre":"Horno ",
+       "precio":29999,
+       "img":"/img/horno.png"
+    },
+    {
+       "id":5,
+       "tipo":"horno",
+       "nombre":"Horno 2",
+       "precio":49999,
+       "img":"/img/horno.png"
+    },
+    {
+       "id":6,
+       "tipo":"horno",
+       "nombre":"Horno 3",
+       "precio":28900,
+       "img":"/img/horno.png"
+    },
+    {
+       "id":7,
+       "tipo":"tostadora",
+       "nombre":"Tostadora",
+       "precio":35000,
+       "img":"/img/tostadora.png"
+    },
+    {
+       "id":8,
+       "tipo":"tostadora",
+       "nombre":"Tostadora 2",
+       "precio":39000,
+       "img":"/img/tostadora.png"
+    },
+    {
+       "id":9,
+       "tipo":"tostadora",
+       "nombre":"Tostadora 3",
+       "precio":49999,
+       "img":"/img/tostadora.png"
+    },
+    {
+       "id":10,
+       "tipo":"cafetera",
+       "nombre":"Cafetera",
+       "precio":12000,
+       "img":"/img/cafetera.png"
+    },
+    {
+       "id":11,
+       "tipo":"cafetera",
+       "nombre":"Cafetera 2",
+       "precio":10000,
+       "img":"/img/cafetera.png"
+    },
+    {
+       "id":12,
+       "tipo":"cafetera",
+       "nombre":"Cafetera 3",
+       "precio":31200,
+       "img":"/img/cafetera.png"
+    }
+ ]
