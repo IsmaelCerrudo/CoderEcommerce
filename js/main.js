@@ -71,17 +71,41 @@ function agregarAlCarrito(product) {
 iconCart.addEventListener('click',()=>{
     carritoDiv.classList.toggle("active");
 })
-//Hacer Calculo Final con el monto total
-// function totalPago(carrito){
-//     const monto = carrito.map(producto =>{
-//         producto.total = producto.precio * producto.cantidad
-//         console.log(producto.total)
 
-//         // totalPagos.innerHTML = `<ul class="filaCarrito d-flex flex-wrap justify-content-evenly mt-4">
-//         // <li></li>
-//         // </ul>`
-//     })
-// }
+
+
+//Hacer Calculo Final con el monto total
+function totalPago(carrito){
+    let sum = 0;
+    for (const producto of carrito) {
+        producto.total = producto.precio * producto.cantidad
+        sum += producto.total
+    }
+    totalPagos.innerHTML = `<ul class="filaCarrito d-flex flex-wrap justify-content-evenly mt-4">
+    <li class="mt-3">$${sum}</li>
+    <button class="btn-pago p-3">Pagar Total</button>
+    </ul>`
+    if(sum == 0){
+        document.querySelector('.btn-pago').addEventListener('click', () => {
+            Swal.fire({
+                title: 'No selecciono ningun producto!',
+                text: 'Agregue algo!',
+                icon: 'error',
+                confirmButtonText: 'Salir'
+              })
+        })
+    }else{
+        document.querySelector('.btn-pago').addEventListener('click', () => {
+            Swal.fire({
+                title: 'Pago Exitoso!',
+                text: 'Gracias por su confianza',
+                icon: 'success',
+                confirmButtonText: 'Salir'
+              })
+        })
+    }
+}
+
 //Recorrer el array del carrito y por cada producto crear las filas del carrito, tambien guardando en el storage los datos
 function renderCarrito() {
     carritoDiv.innerHTML = ``;
@@ -95,7 +119,7 @@ function renderCarrito() {
     })
     localStorage.setItem("carrito", JSON.stringify(carrito))
     funcionEliminar();
-    // totalPago(carrito);
+    totalPago(carrito);
     
 }
 
@@ -152,6 +176,7 @@ function filtrar(data) {
         crearCards(data);
     })
 }
+ 
 
 
 stockProductos();

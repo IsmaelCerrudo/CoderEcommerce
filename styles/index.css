@@ -21,11 +21,15 @@
 .carrito {
   z-index: 20;
 }
-.carrito .filaCarrito {
+
+.filaCarrito {
   margin-left: 10%;
   width: 80%;
   list-style: none;
   background-color: rgba(136, 119, 85, 0.2);
+}
+.filaCarrito .btn-pago {
+  background-color: rgba(68, 255, 51, 0.6666666667);
 }
 
 .active {

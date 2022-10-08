@@ -20,11 +20,15 @@
 }
 .carrito{
     z-index: 20;
-    .filaCarrito{
-        margin-left: 10%;
-        width: 80%;
-        list-style: none;
-        background-color: #8753;
+    
+}
+.filaCarrito{
+    margin-left: 10%;
+    width: 80%;
+    list-style: none;
+    background-color: #8753;
+    .btn-pago{
+        background-color: #4f3a
     }
 }
 .active{
